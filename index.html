@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Browser Window</title>
+  </head>
+  <body>
+    <div class="browser">
+      <div class="window">
+        <div class="window-controls">
+          <div class="control close"><i class="fa-solid fa-xmark"></i></div>
+          <div class="control minimize">
+            <i class="fa-solid fa-minus"></i>
+          </div>
+          <div class="control maximize">
+            <i class="fa-solid fa-maximize"></i>
+          </div>
+          <div class="chrome-icon">
+            <i class="fa-brands fa-chrome"></i>
+          </div>
+        </div>
+        <div class="title-bar">
+          <i class="fa-solid fa-arrow-left-long"></i>
+          <i class="fa-solid fa-arrows-rotate"></i>
+          <div class="search-input">
+            <input type="text" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-sharp fa-solid fa-palette"></i>
+            <i class="fa-solid fa-brush"></i>
+          </div>
+        </div>
+        <hr />
+
+        <div class="middle-section relative">
+          <!-- PROFILE SECTION -->
+
+          <section
+            id="about-wrap"
+            class="flex flex-column flex-center absolute active"
+          >
+            <div class="aboutme absolute">
+              <h2 class="heading about-me">About Me</h2>
+              <div class="profile-pic-wrap flex flex-center">
+                <img class="profile-pic" src="pawan.jpeg" />
+              </div>
+              <div class="heading web-developer">
+                <span>Web Developer</span>&nbsp;&nbsp;<span>Web Designer</span>
+              </div>
+              <div class="cards">
+                <div class="about-card flex flex-column flex-center">
+                  <p class="message">My name is Pawan Awasthi.</p>
+                  <p class="message">You can find me and contact me on:</p>
+                  <div class="about-icons">
+                    <a
+                      style="color: black"
+                      href="https://www.gmail.com"
+                      target="_blank"
+                    >
+                      <i class="awesome fa-regular fa-envelope"></i
+                    ></a>
+                    <a
+                      style="color: black"
+                      href="https://www.facebook.com"
+                      target="_blank"
+                    >
+                      <i class="awesome fa-brands fa-facebook"></i>
+                    </a>
+                    <a
+                      style="color: black"
+                      href="https://www.linkedin.com"
+                      target="_blank"
+                    >
+                      <i class="awesome fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a
+                      style="color: black"
+                      href="https://www.instagram.com"
+                      target="_blank"
+                    >
+                      <i class="awesome fa-brands fa-instagram"></i>
+                    </a>
+                    <a
+                      style="color: black"
+                      href="https://www.twitter.com"
+                      target="_blank"
+                    >
+                      <i class="awesome fa-brands fa-twitter"></i>
+                    </a>
+                    <a
+                      style="color: black"
+                      href="https://www.whatsapp.com"
+                      target="_blank"
+                    >
+                      <i class="awesome fa-brands fa-whatsapp"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="more flex flex-column flex-center">
+                  <p class="message">Wanna find out more about me?</p>
+                  <button class="btn btn-primary btn-transparent">
+                    Download Resume
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SKILLS SECTION -->
+
+          <section class="skill-wrap relative flex flex-center">
+            <div class="absolute flex flex-center flex-column">
+              <h2 class="heading skills-text">My Skills</h2>
+              <div class="skill-icons">
+                <img src="html_css_js.svg" />
+              </div>
+            </div>
+          </section>
+
+          <!-- CODING SECTION -->
+
+          <section class="coding-wrap relative flex flex-center">
+            <div class="coding">
+              <div>
+                <img class="languages" src="c.svg" />
+              </div>
+              <div>
+                <img class="languages" src="c++.svg" />
+              </div>
+              <div>
+                <img class="languages" src="html.svg" />
+              </div>
+              <div>
+                <img class="languages" src="css.svg" />
+              </div>
+              <div>
+                <img class="languages" src="js.svg" />
+              </div>
+              <div>
+                <img class="languages" src="react.svg" />
+              </div>
+            </div>
+          </section>
+
+          <!-- PROJECTS SECTION -->
+
+          <section class="projects-wrap relative flex flex-center heading">
+            <div class="projects absolute">Projects are yet to be added!!!</div>
+          </section>
+
+          <!-- CONTACT ME SECTION -->
+
+          <section class="form-wrap relative flex flex-center">
+            <form id="form" class="form contact absolute">
+              <h2>Contact Me</h2>
+              <div class="form-element">
+                <label for="username">Username</label>
+                <input
+                  type="text"
+                  id="username"
+                  required
+                  placeholder="Username"
+                />
+              </div>
+              <div class="form-element">
+                <label for="email">Email</label>
+                <input type="eamil" id="email" required placeholder="Email" />
+              </div>
+              <div class="form-element">
+                <label for="message">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Enter a message"
+                ></textarea>
+              </div>
+
+              <button type="submit" id="submit-btn" class="btn btn-primary">
+                Submit
+              </button>
+            </form>
+          </section>
+
+          <!-- Bottom Navigation Bar -->
+
+          <section class="bottom-navigation relative flex flex-center">
+            <div class="navigation flex flex-space-around">
+              <div class="nav-items icon1">
+                <button class="icon ghost btn1 active">
+                  <i class="fa-solid fa-user"></i>
+                </button>
+                <span class="nav-text">Profile</span>
+              </div>
+              <div class="nav-items icon2">
+                <button class="icon ghost btn2">
+                  <i class="fa-solid fa-bolt-lightning"></i>
+                </button>
+                <span class="nav-text">Skills</span>
+              </div>
+              <div class="nav-items icon3">
+                <button class="icon ghost btn3">
+                  <i class="fa-solid fa-code"></i>
+                </button>
+                <span class="nav-text">Coding</span>
+              </div>
+              <div class="nav-items icon4">
+                <button class="icon ghost btn4">
+                  <i class="fa-solid fa-diagram-project"></i>
+                </button>
+                <span class="nav-text">Projects</span>
+              </div>
+              <div class="nav-items icon5">
+                <button class="icon ghost btn5">
+                  <i class="fa-solid fa-address-book"></i>
+                </button>
+                <span class="nav-text">Contact</span>
+              </div>
+              <div class="selector absolute"></div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
